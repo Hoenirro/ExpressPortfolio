@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head'); %>
+</head>
+
+<body class="container">
+
+    <header>
+        <%- include('../partials/header'); %>
+    </header>
+
+    <main>
+        <div class="row">
+        <div class="col-sm-8">
+            <div class="jumbotron">
+
+                <h1>Contact Me</h1>
+                <p>Feel free to get in touch with me using the form below or via the contact information provided.</p>
+            </div>
+        
+
+
+        </div>
+        <!-- Contact Information Panel -->
+        <div class="col-md-4">
+            <div class="panel panel-default; well bg-light">
+                <div class="panel-heading">Contact Information</div>
+                <div class="panel-body"><br>
+                    <p><strong>Name:</strong> Jorge Enrique Oviedo Samaniego</p>
+                    <p><strong>Email:</strong> joviedos@my.centennialcollege.ca</p>
+                    <p><strong>Phone:</strong> (437) 419 4883 (Canada)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <!-- Contact Form -->
+        <div class="panel panel-default">
+            <div class="panel-heading">Send Me a Message</div>
+            <div class="panel-body">
+                <form action="/submit" method="post">
+                    <div class="form-group">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" class="form-control" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" class="form-control" id="lastName" name="lastName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactNumber">Contact Number:</label>
+                        <input type="tel" class="form-control" id="contactNumber" name="contactNumber" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea class="form-control" rows="4" id="message" name="message" required></textarea>
+                    </div>
+                    <!--<button type="submit" class="btn btn-primary">Submit</button>-->
+                </form>
+                <a href="/" class="btn btn-primary">Submit</a>
+            </div>
+        </div>
+
+
+
+
+    </main>
+
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+
+</body>
+
+</html>

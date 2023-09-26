@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+  <style>
+    /* Add custom CSS for layout */
+    .service {
+      display: flex;
+      align-items: center; /* Vertically center items */
+      margin-bottom: 20px; /* Add some spacing between services */
+    }
+
+    .service img {
+      max-width: 200px; /* Set maximum image width */
+      margin-right: 20px; /* Add spacing between image and description */
+    }
+
+    /* Add more custom styles as needed */
+  </style>
+</head>
+<body class="container">
+
+<header>
+  <%- include('../partials/header'); %>
+</header>
+
+<main>
+    <div class="jumbotron">
+      <h1>My Services</h1>
+      <p>Welcome to my services page.</p>
+    </div>
+  
+    <!-- Service 1: Telecommunications Solutions -->
+    <div class="service">
+      <img src="/assets/teleco.jpg" alt="Telecommunications Service Image">
+      <div>
+        <h2>Telecommunications Solutions</h2>
+        <p>
+          I offer comprehensive telecommunications solutions and expertise to address complex communication challenges.
+        </p>
+      </div>
+    </div>
+  
+    <!-- Service 2: Network Architecture -->
+    <div class="service">
+      <img src="/assets/router.png" alt="Network Architecture Service Image">
+      <div>
+        <h2>Network Architecture</h2>
+        <p>
+          With experience in CISCO network architecture, I can help design and optimize network infrastructures.
+        </p>
+      </div>
+    </div>
+  
+    <!-- Service 3: Graphic Design -->
+    <div class="service">
+      <img src="/assets/gdesign.png" alt="Graphic Design Service Image">
+      <div>
+        <h2>Graphic Design</h2>
+        <p>
+          I provide creative graphic design services, including branding, logo design, and website graphics.
+        </p>
+      </div>
+    </div>
+  
+    <!-- Service 4: Business Consulting -->
+    <div class="service">
+      <img src="/assets/entrep.jpg" alt="Business Consulting Service Image">
+      <div>
+        <h2>Business Consulting</h2>
+        <p>
+          I offer business consulting and organizational expertise to optimize your business operations.
+        </p>
+      </div>
+    </div>
+  
+  </main>
+
+<br>
+
+<footer>
+  <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>

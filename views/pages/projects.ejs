@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+  <%- include('../partials/header'); %>
+</header>
+
+<main>
+    <div class="jumbotron">
+      <h1>My Projects</h1>
+      <p>Welcome to my project showcase.</p>
+    </div>
+  
+    <!-- Project 1: Game Development -->
+    <div class="project">
+      <h2>Game Development Project</h2>
+      <img style="height: 200px;" src="/assets/unitysample.png" alt="Unity Canvas Screenshot">
+      <p>
+        For my Introduction to Game and Simulations class, I'm working on a variation of the classic game Pong. Here's a snapshot of the Unity canvas showcasing my progress.
+      </p>
+    </div>
+  
+    <!-- Project 2: VTuber Avatar -->
+    <div class="project">
+      <h2>VTuber Avatar</h2>
+      <video controls loop muted style="height: 200px;">
+        <source src="/assets/vtube.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p>
+        I created a VTuber avatar for freelance work, focusing on rigging and animating. Here's a short clip of the avatar in action.
+      </p>
+    </div>
+  
+    <!-- Project 3: Website -->
+    <div class="project">
+        <h2>Business Website</h2>
+        <p>
+          I designed and developed a business website for my company in Colombia. You can explore it by clicking the image below:
+        </p>
+        <a href="http://amorearquitectura.com/" target="_blank">
+          <img src="/assets/websitess.png" alt="Business Website Screenshot" style="height: 200px;">
+        </a>
+        
+      </div>
+  
+  </main>
+
+<br>
+
+<footer>
+  <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>
