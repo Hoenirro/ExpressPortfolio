@@ -18,43 +18,19 @@
         <p>
           I am an Electronics Engineer graduated from the Universidad El Bosque de Colombia, confident in my handling of telecommunications issues and programming languages. I use a wide variety of creative solutions for unfamiliar problems, and I am always looking for better and optimal ways to approach any topic. I have experience in CISCO network architecture having worked as a configuration engineer for Claro Colombia through a service provision contract from the company ARCOM. As a graphic designer at A more S.A.S., I started the creative process of the corporate image, including the design of the company's brand, logo, website, and image on social networks. I worked hand in hand with architects and civil engineers to prepare proposals for 3D design and editing. My diverse experiences have made me a versatile person who is highly adaptable and eager to learn.
         </p>
-        <p><a href="/assets/resume.pdf" target="_blank">View My Resume (PDF)</a></p>
+        <p><a href="/assets/pdf/resume.pdf" target="_blank">View My Resume (PDF)</a></p>
         <br>
         <canvas id="pdfCanvas"></canvas>
-        <script>
-          function displayPDF(pdfUrl) {
-              const canvas = document.getElementById('pdfCanvas');
-      
-              // Initialize PDF.js
-              pdfjsLib.getDocument(pdfUrl).promise.then(function (pdf) {
-                  // Fetch the first page
-                  return pdf.getPage(1);
-              }).then(function (page) {
-                  const viewport = page.getViewport({ scale: 1 });
-                  const context = canvas.getContext('2d');
-      
-                  // Set the canvas dimensions to match the PDF page
-                  canvas.width = viewport.width;
-                  canvas.height = viewport.height;
-      
-                  // Render the PDF page on the canvas
-                  page.render({ canvasContext: context, viewport: viewport });
-              });
-          }
-      
-          // Call the function to display the PDF when the page loads
-          window.onload = function () {
-              const pdfUrl = '/assets/resume.pdf'; // Replace with your PDF file path
-              displayPDF(pdfUrl);
-          };
-      </script>
+        <!--calling the pdf showup script-->
+        <script src="/assets/jscripts/pdfshowup.js"></script>
+
       </div>
     </div>
-
+    <!-- Adding a sidebar with info and my pic-->
     <div class="col-sm-4">
       <div class="well bg-light" style="height: 100%; align-content: center;">
         <h2 style="text-align: center">Jorge Enrique Oviedo Samaniego</h2>
-        <img src="/assets/profpic.png" alt="Profile Picture" style="width: 350px; height: 350px;">
+        <img src="/assets/img/profpic.png" alt="Profile Picture" style="width: 350px; height: 350px;">
       </div>
     </div>
   </div>
